@@ -23,9 +23,14 @@ body{
 }
 #affichage, #result{
     border: 1px solid purple;
-    width: 220px;
-    height: 40px;
-    margin:5px;
+    width: 210px;
+    height: 30px;
+    margin: 5px;
+    padding: 4px;
+    font-size: 20px;
+}
+#result{
+    text-align: right;
 }
 .bouton{
     grid-area: 4 / 1;
@@ -58,3 +63,11 @@ body{
     margin-left: -5px;
 }
 
+.resetContainer{
+    grid-area: 3 / 1;
+    margin-left: 5px;
+}
+#reset{
+    width: 140px;
+    
+}

@@ -1,20 +1,22 @@
-// constante operateur et événement
+// constante operateur et événement (egal et reset)
 const egal = document.getElementById("égal");
+
 egal.addEventListener("click", () => {
     calcul();
 });
-const plus2 = document.getElementById("plus2");
-plus.addEventListener("click", () => {
-    fnctAffichage(plus2);
-});
+
+const reset = document.querySelector("#reset");
+reset.addEventListener("click", ()=> {
+    result2.textContent = "";
+    affichage.textContent = "";
+})
 
 // constante affichage et result
-const result2 = document.getElementById("result2");
+const result2 = document.getElementById("result");
 const affichage = document.getElementById("affichage");
 
-// constante bouton valeure
+// constante bouton valeure et événement
 let listBtn= document.getElementsByClassName("btn");
-console.log(listBtn);
 function fnctEventBtn(){
     for (let btn of listBtn){
         btn.addEventListener("click", () => {
@@ -26,7 +28,7 @@ function fnctEventBtn(){
 // fonction calcul
 function calcul(){    
     a = affichage.textContent;
-    const resultat2 = math.evaluate(a);
+    let resultat2 = math.evaluate(a);
     result2.textContent = resultat2;
 }
 
