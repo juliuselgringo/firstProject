@@ -3,9 +3,10 @@ body{
     width: 500px;
     display:flex;
     justify-content: center;
+    background-color: rgb(63, 63, 63)
 }
 .container{
-    border: 1px solid green;
+    border: 1px solid black;
     display:grid;
     grid-template-columns: repeat(4, 50px);
     grid-template-rows: repeat(7, 50px);
@@ -14,6 +15,9 @@ body{
     margin-top: 20vh;
     padding: 5px;
     justify-content: space-between ;
+    background-color: black;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 5px;
 }
 #affichage{
     grid-area: 1 / 1;
@@ -22,12 +26,12 @@ body{
     grid-area: 2 / 1;
 }
 #affichage, #result{
-    border: 1px solid purple;
     width: 210px;
     height: 30px;
     margin: 5px;
     padding: 4px;
     font-size: 20px;
+    background-color: aliceblue;
 }
 #result{
     text-align: right;
@@ -41,6 +45,7 @@ body{
     flex-wrap: wrap;
     border:1px solid black;
     margin-left: 5px;
+    background: linear-gradient(rgb(175, 50, 50),rgb(100, 50, 50)30% 70%,rgb(175, 50, 50));
 }
 
 .btn, .btnOp{
@@ -59,8 +64,8 @@ body{
     flex-direction: column;
     height: 250px;
     width: 50px;
-    border: 1px solid red;
     margin-left: -5px;
+    background: linear-gradient(rgb(175, 50, 50),rgb(100, 50, 50)30% 70%,rgb(175, 50, 50));
 }
 
 .resetContainer{
@@ -69,5 +74,6 @@ body{
 }
 #reset{
     width: 140px;
+    background: linear-gradient(rgb(175, 50, 50),rgb(100, 50, 50)40% 60%,rgb(175, 50, 50));
     
 }
