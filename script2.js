@@ -32,17 +32,15 @@ function calcul(){
         a = affichage.textContent;
         let resultat2 = math.evaluate(a);
         result2.textContent = resultat2;
-        throw new Error("Votre calcul est impossible!")
+        throw new Error("Votre calcul est impossible!");
     }
     catch(err){
         if(err instanceof SyntaxError){
-            console.log("Votre calcul est impossible!")
+            console.log("Votre calcul est impossible!");
         }
     }
-    finally{
-        affichage.textContent = "Calcul impossible!";
-    }
 }
+
 
 
 
@@ -50,8 +48,6 @@ function calcul(){
 function fnctAffichage(btn){
     let btnVal = btn.value;
     affichage.textContent += btnVal;
-
-
 }
 
 
