@@ -37,7 +37,7 @@ function calcul(){
     catch(err){
         if(err instanceof SyntaxError){
             console.log("Votre calcul est impossible!");
-            result2.textContent = "Votre calcul est impossible!";
+            result2.textContent = "Calcul impossible!";
         }
     }
 }
