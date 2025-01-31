@@ -1,8 +1,9 @@
 body{
-    margin:auto;
-    width: 500px;
+    margin: 0;
+    width: 100vw;
     display:flex;
     justify-content: center;
+    align-items: center;
     background-color: rgb(63, 63, 63)
 }
 .container{

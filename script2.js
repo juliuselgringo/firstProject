@@ -25,17 +25,34 @@ function fnctEventBtn(){
     };
 };
 
-// fonction calcul
+// fonction calcul et gestion erreur
+
 function calcul(){    
-    a = affichage.textContent;
-    let resultat2 = math.evaluate(a);
-    result2.textContent = resultat2;
+    try{
+        a = affichage.textContent;
+        let resultat2 = math.evaluate(a);
+        result2.textContent = resultat2;
+        throw new Error("Votre calcul est impossible!")
+    }
+    catch(err){
+        if(err instanceof SyntaxError){
+            console.log("Votre calcul est impossible!")
+        }
+    }
+    finally{
+        affichage.textContent = "Calcul impossible!";
+    }
 }
+
+
 
 // fonction affichage
 function fnctAffichage(btn){
     let btnVal = btn.value;
     affichage.textContent += btnVal;
+
+
 }
+
 
 fnctEventBtn();
